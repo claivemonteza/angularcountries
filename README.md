@@ -7,7 +7,7 @@ Podendo exportar as informações dos países para o formato XLS, CSV e XML.
 # Tecnologias a utilizar 
 Angular version 10.0.8.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8.
 
 ## Development server
 
