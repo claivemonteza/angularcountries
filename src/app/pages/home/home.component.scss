@@ -19,7 +19,7 @@
 }
 
 .left {
-  padding-top: 1rem;
+  padding-top: 0.4rem;
 }
 
 .left h1 {
@@ -110,19 +110,22 @@
 
   @media (min-width: 376px) {
     width: 33%;
-    padding: 1rem;
-    //margin-top: 1rem;
+    padding: 0rem;
+    margin-left: 6rem;
   }
   span {
     font-size: 1rem;
     padding-right: 0.5rem;
+    padding-left: 0.6rem;
   }
   input {
     font-size: 1rem;
     border: none;
     background-color: inherit;
-    width: 96%;
-    color: white;
+    width: 92%;
+    height: 100%;
+    color: white; 
+    border-radius: 5rem;
   }
 }
 
