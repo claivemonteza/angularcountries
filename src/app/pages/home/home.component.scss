@@ -50,18 +50,18 @@
       text-decoration: none;
     }
   }
-  }
+}
 
-  h2 {
+h2 {
     font-size: 20px;
-  }
+}
 
-  div {
+div {
     font-weight: bolder;
-  }
+}
 
 
-  @media (min-width: 480px) {
+@media (min-width: 480px) {
     .left h1 {
       float: left;
     }
@@ -79,7 +79,7 @@
       padding: 4px 15px;
       text-decoration: none;
     }
-  }
+}
 
 .country-filters {
   display: flex;
