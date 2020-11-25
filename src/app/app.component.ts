@@ -19,7 +19,6 @@ export class AppComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    // this.countryService.getAllCountries().subscribe((res) => console.log(res));
     this.theme = this.themeService.mode$;
   }
 }

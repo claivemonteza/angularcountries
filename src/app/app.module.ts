@@ -10,6 +10,7 @@ import { DetailComponent } from './pages/detail/detail.component';
 import { CountryCardComponent } from './pages/country-card/country-card.component';
 import { DropdownComponent } from './pages/dropdown/dropdown.component';
 import { ExportComponent } from './pages/export/export.component';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { ExportComponent } from './pages/export/export.component';
     DropdownComponent,
     ExportComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, MaterialModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
