@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Observable } from 'rxjs';
 
-import { ApiService } from './services/api.service';
-import { ThemeService, Theme } from './services/theme.service';
+import { CountryService } from './services/country/country.service';
+import { ThemeService, Theme } from './services/theme/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -14,12 +14,12 @@ export class AppComponent implements OnInit {
   theme: Observable<Theme>;
 
   constructor(
-    private apiService: ApiService,
+    private countryService: CountryService,
     private themeService: ThemeService
   ) {}
 
   ngOnInit() {
-    // this.apiService.getAllCountries().subscribe((res) => console.log(res));
+    // this.countryService.getAllCountries().subscribe((res) => console.log(res));
     this.theme = this.themeService.mode$;
   }
 }

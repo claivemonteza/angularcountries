@@ -7,9 +7,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { DetailComponent } from './pages/detail/detail.component';
-import { CountryCardComponent } from './components/country-card/country-card.component';
-import { DropdownComponent } from './components/dropdown/dropdown.component';
-import { ExportComponent } from './components/export/export.component';
+import { CountryCardComponent } from './pages/country-card/country-card.component';
+import { DropdownComponent } from './pages/dropdown/dropdown.component';
+import { ExportComponent } from './pages/export/export.component';
 
 @NgModule({
   declarations: [

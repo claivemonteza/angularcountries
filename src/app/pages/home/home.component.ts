@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from 'src/app/services/api.service';
-import { Country } from 'src/app/countries/Country';
+import { CountryService } from '../../services/country/country.service';
+import { Country } from 'src/app/countries/Country.model';
 
 const REGION_OPTIONS = ['All', 'Africa', 'Americas', 'Asia', 'Europe', 'Oceania'];
 
@@ -16,10 +16,10 @@ export class HomeComponent implements OnInit {
   regionFilter?: string;
   regionOptions = REGION_OPTIONS;
 
-  constructor(private api: ApiService) {}
+  constructor(private countryService: CountryService) {}
 
   ngOnInit(): void {
-    this.api.getAllCountries().subscribe((countries) => {
+    this.countryService.getAllCountries().subscribe((countries) => {
       this.source = countries;
     });
   }
