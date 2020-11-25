@@ -18,6 +18,10 @@ mat-toolbar{
   padding-top: 0.4rem;
 }
 
+.right{
+  display: inherit;
+}
+
 .left h1 {
     // -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -69,6 +73,8 @@ mat-toolbar{
       margin-top: -2px;
     }
 }
+
+
 
 .fa-github::before {
     content: "\f09b";

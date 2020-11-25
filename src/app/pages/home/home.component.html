@@ -10,7 +10,7 @@
   <mat-form-field>
     <mat-label>Search</mat-label>
     <mat-icon matPrefix>search</mat-icon>
-    <input matInput placeholder="Search" [(ngModel)]="searchFilter" >
+    <input matInput (keyup)="searchFilter" placeholder="" class="" >
   </mat-form-field>
   <div class="right" fxFlexLayout="row" fxLayoutAlign="center">
       <app-export></app-export>
