@@ -2,8 +2,9 @@
   overflow: hidden;
   border-radius: 0.5rem;
   font-size: 15px;
-
-  h2 {
+  max-width: 400px; 
+  .h2 {
+    color:  #21b1dd;
     font-weight: bolder;
     font-size: 25px;
     padding-bottom: 0.5rem;
@@ -13,6 +14,7 @@
     padding: 0.25rem 0;
     font-size: 17px;
     font-weight: bolder;
+     margin: 0 0 0px;
   }
 
   &-img {
@@ -29,7 +31,7 @@
   }
 
   &-info {
-    padding: 2rem 1.5rem 2.5rem;
+    padding: 0rem 1.5rem 2.5rem;
   }
 }
 

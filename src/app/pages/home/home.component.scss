@@ -74,7 +74,9 @@ mat-toolbar{
     }
 }
 
-
+.mat-toolbar h1{
+    margin: -7px;
+}
 
 .fa-github::before {
     content: "\f09b";

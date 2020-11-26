@@ -1,34 +1,16 @@
-.dropdown {
-  position: relative;
-  border-radius: 0.25rem;
-  margin-top: 1rem;
-  margin-left: 0%;
-  padding: 0.5rem;
-  font-size: 1rem;
-  width: 87%;
 
-  @media (min-width: 376px) {
-    margin-top: 0;
-  }
-  &-label {
-    display: flex;
-    justify-content: space-between;
-  }
+.mat-stroked-button:not(.mat-button-disabled) {
+    border-color: var(--d-element);
+}
 
-  &-options {
-    border-radius: 0.25rem;
-    position: absolute;
-    top: 110%;
-    left: 0;
-    z-index: 10;
-    width: 90%;
-    list-style: none;
-    padding-left: 1rem;
+.mat-menu-panel {
+    margin-top: 15px;
+    margin-left: -11px;
+}
 
-    li {
-      padding: 0.5rem;
-    }
-  }
+.mat-menu-content:not(:empty) {
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 :host-context(.light) {

@@ -6,8 +6,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./dropdown.component.scss'],
 })
 export class DropdownComponent {
-  showOptions = false;
-
+  
   @Input()
   placeholder: string;
 
@@ -24,7 +23,4 @@ export class DropdownComponent {
     this.valueChange.emit(value);
   }
 
-  toggleOptions() {
-    this.showOptions = !this.showOptions;
-  }
 }

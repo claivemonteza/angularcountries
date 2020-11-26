@@ -11,6 +11,7 @@ import { CountryCardComponent } from './pages/country-card/country-card.componen
 import { DropdownComponent } from './pages/dropdown/dropdown.component';
 import { ExportComponent } from './pages/export/export.component';
 import { MaterialModule } from './material/material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { MaterialModule } from './material/material.module';
     DropdownComponent,
     ExportComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, MaterialModule, HttpClientModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, MaterialModule, HttpClientModule, FormsModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

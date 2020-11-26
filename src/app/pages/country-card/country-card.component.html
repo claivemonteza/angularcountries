@@ -1,25 +1,28 @@
-<div
-  *ngIf="country"
+<mat-card *ngIf="country"
   [routerLink]="'/' + country.name"
-  class="country-card shadow"
->
+  class="country-card shadow">
   <div class="country-card-img">
-    <img [src]="country.flag" />
+     <img mat-card-image [src]="country.flag" alt="flag" class="country-card-info">
   </div>
-  <div class="country-card-info">
-    <h2>{{ country.name }}</h2>
-    <p>
-      <strong>Capital:</strong>
-      {{ country.capital }}
-    </p>
-    <p>
-      <strong>Population:</strong>
-      {{ country.population | number: '1.0' }}
-    </p>
-    <p>
-      <strong>Region:</strong>
-      {{ country.region }}
-    </p>
-    
-  </div>
-</div>
+  <mat-card-content>
+    <div class="country-card-info">
+      <mat-card-header>
+        <mat-card-title class="h2">{{ country.name }}</mat-card-title>
+      </mat-card-header>
+      <p>
+        <strong>Capital:</strong>
+        {{ country.capital }}
+      </p>
+      <p>
+        <strong>Population:</strong>
+        {{ country.population | number: '1.0' }}
+      </p>
+      <p>
+        <strong>Region:</strong>
+        {{ country.region }}
+      </p>
+    </div>
+  </mat-card-content>
+</mat-card>
+
+

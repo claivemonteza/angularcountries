@@ -1,24 +1,20 @@
-
-
 <mat-toolbar fxFlexLayout="row wrap" fxLayoutGap="20px">
   <div class='left'>
     <h1>REST Countries</h1>
     <ul>
-      <li><a class="fa fa-github" href='https://github.com/claivemonteza/exportcountries.git'>View the project</a></li>
+      <li><a class="fa fa-github" href='https://github.com/claivemonteza/angularcountries.git'>View the project</a></li>
     </ul>
   </div>
   <mat-form-field>
     <mat-label>Search</mat-label>
     <mat-icon matPrefix>search</mat-icon>
-    <input matInput (keyup)="searchFilter" placeholder="" class="" >
+    <input matInput  placeholder="" [(ngModel)]="searchFilter" >
   </mat-form-field>
   <div class="right" fxFlexLayout="row" fxLayoutAlign="center">
       <app-export></app-export>
       <app-dropdown placeholder="Filter by Region" [values]="regionOptions" [(value)]="regionFilter"></app-dropdown>
   </div>
 </mat-toolbar>
-
-
 <div class="country-cards">
   <app-country-card
     *ngFor="let country of countries"
