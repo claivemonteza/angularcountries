@@ -13,6 +13,6 @@
   ],
   "include": [
     "src/**/*.spec.ts",
-    "src/**/*.d.ts", "src/app/countries/Country.model.ts"
+    "src/**/*.d.ts"
   ]
 }

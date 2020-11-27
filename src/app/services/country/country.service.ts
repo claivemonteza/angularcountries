@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
-import { Country } from '../../countries/Country.model';
+import { Country } from '../../model/Country.model';
 
 @Injectable({
   providedIn: 'root'
@@ -31,5 +31,4 @@ export class CountryService {
   getCountriesByFieldsSelected() {
     return this.http.get<Country[]>(`${this.url}/all?fields=name;capital;region;subregion;population;area;nativeName;timezones;flag`);
   }
-
 }
