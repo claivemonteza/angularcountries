@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CountryService } from '../../services/country/country.service';
 import { Country } from 'src/app/model/Country.model';
 
-const REGION_OPTIONS = ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania'];
+const REGION_OPTIONS = ['All','Africa', 'Americas', 'Asia', 'Europe', 'Oceania'];
 
 
 @Component({
@@ -34,11 +34,12 @@ export class HomeComponent implements OnInit {
                   .includes(this.searchFilter.toLowerCase())
               : country
           )
+
           .filter((country) =>
-            this.regionFilter
+            this.regionFilter==='All'? this.source: this.regionFilter
               ? country.region.includes(this.regionFilter)
               :country
-      )
-      : this.source;
+    )
+      : this.source
   } ;
 }
