@@ -7,6 +7,9 @@ região, sub-região, população, área, fuso horário, nome nativo e o link pa
 presentes na API (https://restcountries.eu). 
 Podendo exportar as informações dos países para o formato XLS, CSV e XML.
 
+<div align="center">
+  <img alt="image" src="https://github.com/claivemonteza/angularcountries/blob/master/RestCountries.png">
+</div>
 
 # Live Site
 https://claivemonteza.github.io/angularcountries
