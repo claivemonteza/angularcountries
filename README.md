@@ -11,6 +11,11 @@ Podendo exportar as informações dos países para o formato XLS, CSV e XML.
   <img alt="image" src="https://github.com/claivemonteza/angularcountries/blob/master/RestCountries.png">
 </div>
 
+## Development server
+
+Run `ng serve` for a dev server. 
+Navigate to `http://localhost:4200/`.
+
 # Live Site
 https://claivemonteza.github.io/angularcountries
 
