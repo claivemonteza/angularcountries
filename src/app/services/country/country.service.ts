@@ -2,33 +2,34 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import { Country } from '../../model/Country.model';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CountryService {
-  private url = 'https://restcountries.eu/rest/v2';
+  private api = `${environment.api}`;
 
   constructor(private http: HttpClient) { }
 
   getAllCountries() {
-    return this.http.get<Country[]>(`${this.url}/all`);
+    return this.http.get<Country[]>(`${this.api}/all`);
   }
 
   getCountryByName(name: string) {
     return this.http
-      .get<Country[]>(`${this.url}/name/${name}`)
+      .get<Country[]>(`${this.api}/name/${name}`)
       .pipe(map(([res]) => res));
   }
 
   getCountriesByCodes(codes: string[]) {
-    console.log(`${this.url}/alhpa?codes=${codes.join(';')}`);
+    console.log(`${this.api}/alhpa?codes=${codes.join(';')}`);
     return this.http.get<Country[]>(
-      `${this.url}/alpha?codes=${codes.join(';')}`
+      `${this.api}/alpha?codes=${codes.join(';')}`
     );
   }
 
   getCountriesByFieldsSelected() {
-    return this.http.get<Country[]>(`${this.url}/all?fields=name;capital;region;subregion;population;area;nativeName;timezones;flag`);
+    return this.http.get<Country[]>(`${this.api}/all?fields=name;capital;region;subregion;population;area;nativeName;timezones;flag`);
   }
 }
