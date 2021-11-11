@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CountryService } from '../../services/country/country.service';
 import { Country } from 'src/app/model/Country.model';
+import { ThemeService } from 'src/app/services/theme/theme.service';
 
 const REGION_OPTIONS = ['All','Africa', 'Americas', 'Asia', 'Europe', 'Oceania'];
 
@@ -16,7 +17,7 @@ export class HomeComponent implements OnInit {
   regionFilter?: string;
   regionOptions = REGION_OPTIONS;
 
-  constructor(private countryService: CountryService) {}
+  constructor(private countryService: CountryService, private themeService: ThemeService) {}
 
   ngOnInit(): void {
     this.countryService.getAllCountries().subscribe((countries) => {
@@ -42,4 +43,8 @@ export class HomeComponent implements OnInit {
     )
       : this.source
   } ;
+
+  toogleTheme(){
+    this.themeService.toggleMode();
+  }
 }
