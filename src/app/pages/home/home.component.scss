@@ -92,9 +92,15 @@ mat-toolbar {
   margin: -7px;
 }
 
-.fa-github::before {
+ .fa-github::before {
   content: "\f09b";
-  font-size: 14px;
+  font-size: 15px;
+  color: #21b1dd;
+}
+
+.fa-moon-o:before {
+  content: "\f186";
+  font-size: 15px;
   color: #21b1dd;
 }
 
