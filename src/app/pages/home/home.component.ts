@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CountryService } from '../../services/country/country.service';
-import { Country } from 'src/app/model/Country.model';
+import { Country } from '../../model/country.model';
 import { ThemeService } from 'src/app/services/theme/theme.service';
 
 const REGION_OPTIONS = ['All','Africa', 'Americas', 'Asia', 'Europe', 'Oceania'];
