@@ -17,6 +17,7 @@
 mat-toolbar {
   display: flex;
   position: sticky;
+  z-index: 100;
     top:0;
   box-shadow: 0 0 0.9px rgb(0 0 0);
   padding: 20px;
