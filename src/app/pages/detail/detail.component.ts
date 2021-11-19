@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CountryService } from '../../services/country/country.service';
 import { Observable, forkJoin, of } from 'rxjs';
-import { Country} from 'src/app/model/Country.model';
+import { Country} from '../../model/country.model';
 import { ActivatedRoute } from '@angular/router';
 import { tap } from 'rxjs/operators';
 
